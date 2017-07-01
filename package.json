@@ -1,0 +1,37 @@
+{
+  "name": "@lneicelis/redux-worker",
+  "version": "0.1.0",
+  "description": "Runs your redux store and selectors in separate parallel process",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lneicelis/redux-worker.git"
+  },
+  "keywords": [
+    "redux",
+    "web",
+    "workers",
+    "rxjs",
+    "reselect",
+    "javascript",
+    "performance"
+  ],
+  "author": "Lukas Neicelis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lneicelis/redux-worker/issues"
+  },
+  "homepage": "https://github.com/lneicelis/redux-worker#readme",
+  "dependencies": {
+    "@reactivex/rxjs": "^5.4.1"
+  },
+  "devDependencies": {
+    "redux": "^3.7.1",
+    "typescript": "^2.4.1"
+  }
+}
