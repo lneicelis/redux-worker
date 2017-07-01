@@ -9,7 +9,7 @@ export function createWorkerStore(worker: Worker) {
 
         worker.addEventListener('message', handler);
 
-        return worker.removeEventListener('message', handler);
+        return () => worker.removeEventListener('message', handler);
     }).share();
 
     const message$ = messageEvent$

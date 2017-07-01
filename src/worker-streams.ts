@@ -19,7 +19,7 @@ export function createWorkerStreams(store: Store<any>, selectorRegistry: Selecto
 
             worker.addEventListener('message', handler);
 
-            return worker.removeEventListener('message', handler);
+            return () => worker.removeEventListener('message', handler);
         })
         .share();
 
