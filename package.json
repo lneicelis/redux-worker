@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,8 @@
     "@reactivex/rxjs": "^5.4.1"
   },
   "devDependencies": {
+    "@types/jest": "^20.0.2",
+    "jest": "^20.0.4",
     "redux": "^3.7.1",
     "typescript": "^2.4.1"
   }

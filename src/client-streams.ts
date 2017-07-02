@@ -1,5 +1,9 @@
 import {Observable} from "@reactivex/rxjs/dist/cjs/Observable";
 import {Observer} from "@reactivex/rxjs/dist/cjs/Observer";
+import '@reactivex/rxjs/dist/cjs/add/operator/share';
+import '@reactivex/rxjs/dist/cjs/add/operator/map';
+import '@reactivex/rxjs/dist/cjs/add/operator/filter';
+import '@reactivex/rxjs/dist/cjs/add/operator/switchMap';
 import {SELECTOR_RESULT, SELECTOR_SUBSCRIPTION, SELECTOR_UNSUBSCRIPTION, STORE_ACTION} from "./messge-types";
 import {Action} from "redux";
 
